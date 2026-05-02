@@ -1,0 +1,4 @@
+# Tempatkan ketiga file .pkl Anda di sini / Place your three .pkl files here:
+#   - model.pkl
+#   - scaler.pkl
+#   - target_encoder.pkl
