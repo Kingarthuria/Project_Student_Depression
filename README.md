@@ -24,9 +24,9 @@ mindcheck-app/
 
 | Level Risiko | Range Probabilitas | Basis |
 |---|---|---|
-| 🟢 **Rendah / Low**   | P < 0.233  | Recall depresi ≥ 0.95 |
-| 🟡 **Sedang / Medium** | 0.233 ≤ P < 0.75 | — |
-| 🔴 **Tinggi / High**  | P ≥ 0.75   | Precision depresi ≥ 0.90 |
+| 🟢 **Rendah / Low**   | P < 0.3365  | Recall depresi ≥ 0.95 |
+| 🟡 **Sedang / Medium** | 0.3365 ≤ P < 0.7033 | — |
+| 🔴 **Tinggi / High**  | P ≥ 0.7033   | Precision depresi ≥ 0.90 |
 
 ---
 
