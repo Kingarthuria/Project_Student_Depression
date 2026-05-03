@@ -35,7 +35,7 @@ st.set_page_config(
 # ══════════════════════════════════════════════════════════════════════════════
 
 THRESHOLD_LOW  = 0.3365
-THRESHOLD_HIGH = 0.703
+THRESHOLD_HIGH = 0.7033
 
 LANG_ID = "🇮🇩  Bahasa Indonesia"
 LANG_EN = "🇬🇧  English"
@@ -330,59 +330,77 @@ def s(key: str) -> str:
 RECOMMENDATIONS = {
     "low": {
         LANG_ID: {
-            "title": "✅ Risiko Rendah",
+            "title": "Risiko Rendah",
             "desc": (
                 "Berdasarkan respons Anda, tidak terdapat indikator signifikan yang "
                 "mengarah pada risiko depresi saat ini. Pertahankan kondisi positif ini "
                 "dan terus jaga kesehatan mental Anda!"
             ),
             "recs": [
-                ("🛏️  Jaga Keseimbangan Hidup", [
+                ("1.  Jaga Keseimbangan Hidup", [
                     "Pertahankan durasi tidur 7–8 jam dan pola makan seimbang secara konsisten",
                 ]),
-                ("📓  Pemantauan Diri", [
+                ("2.  Pemantauan Diri", [
                     "Lakukan refleksi atau journaling mingguan untuk memantau kondisi mental Anda",
                 ]),
-                ("🏫  Manfaatkan Konseling Preventif", [
+                ("3.  Manfaatkan Konseling Preventif", [
                     "Layanan konseling kampus tersedia untuk semua mahasiswa — tidak harus menunggu hingga bermasalah",
+                ]),
+                ("4.  Bangun Koneksi Sosial", [
+                    "Jaga hubungan aktif dengan teman dan keluarga — dukungan sosial adalah faktor protektif terkuat terhadap depresi",
+                ]),
+                ("5.  Kelola Stres Secara Proaktif", [
+                    "Pelajari teknik manajemen stres sederhana seperti pernapasan dalam, meditasi ringan, atau olahraga rutin minimal 30 menit per hari",
                 ]),
             ],
         },
         LANG_EN: {
-            "title": "✅ Low Risk",
+            "title": "Low Risk",
             "desc": (
                 "Based on your responses, there are no significant indicators pointing "
                 "to a depression risk at this time. Keep up the great habits and "
                 "continue nurturing your mental wellbeing!"
             ),
             "recs": [
-                ("🛏️  Maintain Life Balance", [
+                ("1.  Maintain Life Balance", [
                     "Maintain 7–8 hours of sleep and a balanced diet consistently",
                 ]),
-                ("📓  Self-Monitoring", [
+                ("2.  Self-Monitoring", [
                     "Practice weekly reflection or journaling to monitor your mental state",
                 ]),
-                ("🏫  Use Preventive Counseling", [
+                ("3.  Use Preventive Counseling", [
                     "Campus counseling services are available for all students — you don't have to wait until things get worse",
+                ]),
+                ("4.  Build Social Connections", [
+                    "Maintain active relationships with friends and family — social support is the strongest protective factor against depression",
+                ]),
+                ("5.  Manage Stress Proactively", [
+                    "Learn simple stress management techniques such as deep breathing, light meditation, or regular exercise for at least 30 minutes a day",
                 ]),
             ],
         },
         LANG_HI: {
-            "title": "\u2705 \u0915\u092e \u091c\u094b\u0916\u093f\u092e",
+            "title": "कम जोखिम",
             "desc": (
-                "\u0906\u092a\u0915\u0940 \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e\u0913\u0902 \u0915\u0947 \u0906\u0927\u093e\u0930 \u092a\u0930, \u0905\u092d\u0940 \u0905\u0935\u0938\u093e\u0926 \u0915\u0947 \u091c\u094b\u0916\u093f\u092e \u0915\u0940 \u0913\u0930 \u0907\u0936\u093e\u0930\u093e \u0915\u0930\u0928\u0947 \u0935\u093e\u0932\u0947 "
-                "\u0915\u094b\u0908 \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u0938\u0902\u0915\u0947\u0924\u0915 \u0928\u0939\u0940\u0902 \u0939\u0948\u0902\u0964 \u0907\u0938 \u0938\u0915\u093e\u0930\u093e\u0924\u094d\u092e\u0915 \u0938\u094d\u0925\u093f\u0924\u093f \u0915\u094b \u092c\u0928\u093e\u090f \u0930\u0916\u0947\u0902 "
-                "\u0914\u0930 \u0905\u092a\u0928\u0947 \u092e\u093e\u0928\u0938\u093f\u0915 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0915\u093e \u0916\u094d\u092f\u093e\u0932 \u0930\u0916\u0924\u0947 \u0930\u0939\u0947\u0902!"
+                "आपकी प्रतिक्रियाओं के आधार पर, अभी अवसाद के जोखिम की ओर इशारा करने वाले "
+                "कोई महत्वपूर्ण संकेतक नहीं हैं। इस सकारात्मक स्थिति को बनाए रखें "
+                "और अपने मानसिक स्वास्थ्य का ख्याल रखते रहें!"
             ),
             "recs": [
-                ("\U0001f6cf\ufe0f  \u091c\u0940\u0935\u0928 \u0938\u0902\u0924\u0941\u0932\u0928 \u092c\u0928\u093e\u090f \u0930\u0916\u0947\u0902", [
-                    "\u0932\u0917\u093e\u0924\u093e\u0930 7\u20138 \u0918\u0902\u091f\u0947 \u0915\u0940 \u0928\u0940\u0902\u0926 \u0914\u0930 \u0938\u0902\u0924\u0941\u0932\u093f\u0924 \u0906\u0939\u093e\u0930 \u092c\u0928\u093e\u090f \u0930\u0916\u0947\u0902",
+                ("1.  जीवन संतुलन बनाए रखें", [
+                    "लगातार 7–8 घंटे की नींद और संतुलित आहार बनाए रखें",
                 ]),
-                ("\U0001f4d3  \u0938\u094d\u0935-\u0928\u093f\u0917\u0930\u093e\u0928\u0940", [
-                    "\u0905\u092a\u0928\u0940 \u092e\u093e\u0928\u0938\u093f\u0915 \u0938\u094d\u0925\u093f\u0924\u093f \u0915\u0940 \u0928\u093f\u0917\u0930\u093e\u0928\u0940 \u0915\u0947 \u0932\u093f\u090f \u0938\u093e\u092a\u094d\u0924\u093e\u0939\u093f\u0915 \u092a\u094d\u0930\u0924\u093f\u092c\u093f\u0902\u092c \u092f\u093e \u091c\u0930\u094d\u0928\u0932\u093f\u0902\u0917 \u0915\u0930\u0947\u0902",
+                ("2.  स्व-निगरानी", [
+                    "अपनी मानसिक स्थिति की निगरानी के लिए साप्ताहिक प्रतिबिंब या जर्नलिंग करें",
                 ]),
-                ("\U0001f3eb  \u0928\u093f\u0935\u093e\u0930\u0915 \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902", [
-                    "\u0915\u0948\u0902\u092a\u0938 \u0915\u093e\u0909\u0902\u0938\u0932\u093f\u0902\u0917 \u0938\u0947\u0935\u093e\u090f\u0902 \u0938\u092d\u0940 \u091b\u093e\u0924\u094d\u0930\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0902 \u2014 \u0938\u092e\u0938\u094d\u092f\u093e \u092c\u0922\u093c\u0928\u0947 \u0915\u093e \u0907\u0902\u0924\u091c\u093e\u0930 \u0928 \u0915\u0930\u0947\u0902",
+                ("3.  निवारक परामर्श का उपयोग करें", [
+                    "कैंपस काउंसलिंग सेवाएं सभी छात्रों के लिए उपलब्ध हैं — समस्या बढ़ने का इंतजार न करें",
+                ]),
+                ("4.  सामाजिक संबंध बनाएं", [
+                    "दोस्तों और परिवार के साथ सक्रिय संबंध बनाए रखें — सामाजिक समर्थन अवसाद के विरुद्ध सबसे मजबूत सुरक्षात्मक कारक है",
+                ]),
+                ("5.  तनाव को सक्रिय रूप से प्रबंधित करें", [
+                    "गहरी सांस लेना, हल्का ध्यान, या प्रतिदिन कम से कम 30 मिनट व्यायाम जैसी सरल तनाव प्रबंधन तकनीकें सीखें",
                 ]),
             ],
         },
@@ -391,71 +409,80 @@ RECOMMENDATIONS = {
 
     "medium": {
         LANG_ID: {
-            "title": "⚠️  Risiko Sedang",
+            "title": "Risiko Sedang",
             "desc": (
                 "Skrining mendeteksi beberapa faktor yang perlu mendapat perhatian. "
                 "Kondisi ini belum tentu merupakan depresi, namun penanganan dini "
                 "sangat dianjurkan agar tidak berkembang lebih lanjut."
             ),
             "recs": [
-                ("🏫  Jadwalkan Konseling", [
+                ("1.  Jadwalkan Konseling", [
                     "Segera jadwalkan sesi dengan konselor atau psikolog kampus Anda — ini langkah paling penting",
                 ]),
-                ("📖  Kelola Tekanan Akademik", [
-                    "Bagi tugas besar menjadi bagian kecil dan komunikasikan kesulitan kepada dosen atau wali studi",
+                ("2.  Lakukan Skrining Klinis Bersama Profesional", [
+                    "Minta konselor atau psikolog untuk melakukan skrining menggunakan instrumen klinis (PHQ-9) — jangan lakukan sendiri",
                 ]),
-                ("😴  Prioritaskan Istirahat", [
-                    "Targetkan 7–8 jam tidur konsisten — kualitas tidur berpengaruh langsung pada kesehatan mental",
+                ("3.  Pemantauan Intensif", [
+                    "Lakukan pemantauan kondisi secara berkala dalam 2–4 minggu ke depan bersama tenaga profesional",
                 ]),
-                ("💬  Jangan Hadapi Sendiri", [
+                ("4.  Jangan Hadapi Sendiri", [
                     "Ceritakan kondisi Anda kepada orang yang dipercaya — teman dekat, keluarga, atau konselor",
                     "Jika sewaktu-waktu merasa kewalahan, layanan hotline tersedia untuk diajak bicara",
+                ]),
+                ("5.  Prioritaskan Istirahat", [
+                    "Targetkan 7–8 jam tidur konsisten — kualitas tidur berpengaruh langsung pada kesehatan mental",
                 ]),
             ],
         },
         LANG_EN: {
-            "title": "⚠️  Medium Risk",
+            "title": "Medium Risk",
             "desc": (
                 "The screening detected several factors that need attention. "
                 "This does not necessarily indicate depression, but early intervention "
                 "is strongly recommended to prevent further progression."
             ),
             "recs": [
-                ("🏫  Schedule Counseling", [
+                ("1.  Schedule Counseling", [
                     "Schedule a session with your campus counselor or psychologist soon — this is the most important step",
                 ]),
-                ("📖  Manage Academic Pressure", [
-                    "Break large tasks into smaller parts and communicate challenges to your lecturer or academic advisor",
+                ("2.  Clinical Screening with a Professional", [
+                    "Ask your counselor or psychologist to conduct a clinical screening using the PHQ-9 instrument — do not do this alone",
                 ]),
-                ("😴  Prioritize Rest", [
-                    "Aim for a consistent 7–8 hours of sleep — sleep quality directly affects mental health",
+                ("3.  Intensive Monitoring", [
+                    "Monitor your condition regularly over the next 2–4 weeks together with a professional",
                 ]),
-                ("💬  Don't Face It Alone", [
+                ("4.  Don't Face It Alone", [
                     "Share your condition with someone you trust — a close friend, family member, or counselor",
                     "If you ever feel overwhelmed, hotline services are available to talk to",
+                ]),
+                ("5.  Prioritize Rest", [
+                    "Aim for a consistent 7–8 hours of sleep — sleep quality directly affects mental health",
                 ]),
             ],
         },
         LANG_HI: {
-            "title": "\u26a0\ufe0f  \u092e\u0927\u094d\u092f\u092e \u091c\u094b\u0916\u093f\u092e",
+            "title": "मध्यम जोखिम",
             "desc": (
-                "\u091c\u093e\u0902\u091a \u092e\u0947\u0902 \u0915\u0941\u091b \u090f\u0938\u0947 \u0915\u093e\u0930\u0915 \u092e\u093f\u0932\u0947 \u0939\u0948\u0902 \u091c\u093f\u0928 \u092a\u0930 \u0927\u094d\u092f\u093e\u0928 \u0926\u0947\u0928\u0947 \u0915\u0940 \u091c\u0930\u0942\u0930\u0924 \u0939\u0948\u0964 "
-                "\u092f\u0939 \u091c\u0930\u0942\u0930\u0940 \u0928\u0939\u0940\u0902 \u0915\u093f \u092f\u0939 \u0905\u0935\u0938\u093e\u0926 \u0939\u094b, \u0932\u0947\u0915\u093f\u0928 \u0906\u0917\u0947 \u092c\u0922\u093c\u0928\u0947 \u0938\u0947 \u0930\u094b\u0915\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f "
-                "\u0936\u0940\u0918\u094d\u0930 \u0939\u0938\u094d\u0924\u0915\u094d\u0937\u0947\u092a \u0915\u0940 \u0926\u0943\u0922\u093c\u0924\u093e \u0938\u0947 \u0938\u093f\u092b\u093e\u0930\u093f\u0936 \u0915\u0940 \u091c\u093e\u0924\u0940 \u0939\u0948\u0964"
+                "जांच में कुछ ऐसे कारक मिले हैं जिन पर ध्यान देने की जरूरत है। "
+                "यह जरूरी नहीं कि यह अवसाद हो, लेकिन आगे बढ़ने से रोकने के लिए "
+                "शीघ्र हस्तक्षेप की दृढ़ता से सिफारिश की जाती है।"
             ),
             "recs": [
-                ("\U0001f3eb  \u092a\u0930\u093e\u092e\u0930\u094d\u0936 \u0936\u0947\u0921\u094d\u092f\u0942\u0932 \u0915\u0930\u0947\u0902", [
-                    "\u091c\u0932\u094d\u0926 \u0938\u0947 \u091c\u0932\u094d\u0926 \u0905\u092a\u0928\u0947 \u0915\u0948\u0902\u092a\u0938 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u092f\u093e \u092e\u0928\u094b\u0935\u0948\u091c\u094d\u091e\u093e\u0928\u093f\u0915 \u0915\u0947 \u0938\u093e\u0925 \u0938\u0924\u094d\u0930 \u0936\u0947\u0921\u094d\u092f\u0942\u0932 \u0915\u0930\u0947\u0902",
+                ("1.  परामर्श शेड्यूल करें", [
+                    "जल्द से जल्द अपने कैंपस काउंसलर या मनोवैज्ञानिक के साथ सत्र शेड्यूल करें",
                 ]),
-                ("\U0001f4d6  \u0936\u0948\u0915\u094d\u0937\u0923\u093f\u0915 \u0926\u092c\u093e\u0935 \u0915\u094b \u092a\u094d\u0930\u092c\u0902\u0927\u093f\u0924 \u0915\u0930\u0947\u0902", [
-                    "\u092c\u0921\u093c\u0947 \u0915\u093e\u0930\u094d\u092f\u094b\u0902 \u0915\u094b \u091b\u094b\u091f\u0947 \u0939\u093f\u0938\u094d\u0938\u094b\u0902 \u092e\u0947\u0902 \u092c\u093e\u0902\u091f\u0947\u0902 \u0914\u0930 \u0915\u0920\u093f\u0928\u093e\u0907\u092f\u094b\u0902 \u0915\u094b \u0905\u092a\u0928\u0947 \u0936\u093f\u0915\u094d\u0937\u0915 \u092f\u093e \u0938\u0932\u093e\u0939\u0915\u093e\u0930 \u0938\u0947 \u0938\u093e\u091d\u093e \u0915\u0930\u0947\u0902",
+                ("2.  पेशेवर के साथ नैदानिक जांच करें", [
+                    "काउंसलर या मनोवैज्ञानिक से PHQ-9 उपकरण का उपयोग करके नैदानिक जांच कराएं — यह अकेले न करें",
                 ]),
-                ("\U0001f634  \u0906\u0930\u093e\u092e \u0915\u094b \u092a\u094d\u0930\u093e\u0925\u092e\u093f\u0915\u0924\u093e \u0926\u0947\u0902", [
-                    "\u0932\u0917\u093e\u0924\u093e\u0930 7\u20138 \u0918\u0902\u091f\u0947 \u0915\u0940 \u0928\u0940\u0902\u0926 \u0915\u093e \u0932\u0915\u094d\u0937\u094d\u092f \u0930\u0916\u0947\u0902 \u2014 \u0928\u0940\u0902\u0926 \u0915\u0940 \u0917\u0941\u0923\u0935\u0924\u094d\u0924\u093e \u0938\u0940\u0927\u0947 \u092e\u093e\u0928\u0938\u093f\u0915 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0915\u094b \u092a\u094d\u0930\u092d\u093e\u0935\u093f\u0924 \u0915\u0930\u0924\u0940 \u0939\u0948",
+                ("3.  गहन निगरानी", [
+                    "अगले 2–4 हफ्तों में किसी पेशेवर के साथ नियमित रूप से अपनी स्थिति की निगरानी करें",
                 ]),
-                ("\U0001f4ac  \u0905\u0915\u0947\u0932\u0947 \u092e\u0924 \u091d\u0947\u0932\u0947\u0902", [
-                    "\u0905\u092a\u0928\u0940 \u0938\u094d\u0925\u093f\u0924\u093f \u0915\u093f\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0938\u0928\u0940\u092f \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0915\u0947 \u0938\u093e\u0925 \u0938\u093e\u091d\u093e \u0915\u0930\u0947\u0902",
-                    "\u0905\u0917\u0930 \u0915\u092d\u0940 \u0905\u092d\u093f\u092d\u0942\u0924 \u092e\u0939\u0938\u0942\u0938 \u0939\u094b\u0902, \u0924\u094b \u092c\u093e\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0939\u0949\u091f\u0932\u093e\u0907\u0928 \u0938\u0947\u0935\u093e\u090f\u0902 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0902",
+                ("4.  अकेले मत झेलें", [
+                    "अपनी स्थिति किसी विश्वसनीय व्यक्ति के साथ साझा करें — करीबी दोस्त, परिवार, या काउंसलर",
+                    "अगर कभी अभिभूत महसूस हों, तो बात करने के लिए हॉटलाइन सेवाएं उपलब्ध हैं",
+                ]),
+                ("5.  आराम को प्राथमिकता दें", [
+                    "लगातार 7–8 घंटे की नींद का लक्ष्य रखें — नींद की गुणवत्ता सीधे मानसिक स्वास्थ्य को प्रभावित करती है",
                 ]),
             ],
         },
@@ -464,59 +491,97 @@ RECOMMENDATIONS = {
 
     "high": {
         LANG_ID: {
-            "title": "🚨  Risiko Tinggi",
+            "title": "Risiko Tinggi",
             "desc": (
                 "Hasil skrining menunjukkan indikator yang signifikan terkait risiko depresi. "
                 "Ini bukan diagnosis medis, namun Anda sangat disarankan untuk segera "
                 "mencari bantuan dari profesional kesehatan mental."
             ),
             "recs": [
-                ("🏥  Cari Bantuan Profesional — PRIORITAS UTAMA", [
+                ("1.  Cari Bantuan Profesional — PRIORITAS UTAMA", [
                     "Hubungi psikolog atau psikiater sesegera mungkin — jangan tunda",
                 ]),
-                ("💬  Berbagi dengan Orang Terpercaya", [
+                ("2.  Berbagi dengan Orang Terpercaya", [
                     "Ceritakan perasaan Anda kepada keluarga, sahabat dekat, atau mentor",
                     "Anda tidak harus menanggung beban ini sendirian",
                 ]),
-                ("🎓  Minta Penyesuaian Akademik", [
-                    "Bicarakan dengan dosen atau wali studi tentang perpanjangan deadline atau pengurangan beban studi",
+                ("3.  Aktifkan Dukungan Sosial", [
+                    "Minta keluarga atau teman dekat untuk mendampingi Anda dalam proses ini — jangan isolasi diri",
                 ]),
-                ("📵  Jaga Kesehatan Digital", [
+                ("4.  Minta Penyesuaian Akademik", [
+                    "Bicarakan dengan dosen atau wali studi tentang perpanjangan deadline atau pengurangan beban studi",
+                    "Kesehatan mental Anda lebih penting dari nilai akademik sementara",
+                ]),
+                ("5.  Jaga Kesehatan Digital", [
                     "Batasi paparan informasi negatif dan istirahatkan diri dari media sosial untuk sementara waktu",
                 ]),
-                ("📞  Hubungi Hotline Jika Dibutuhkan", [
-                    "Hotline tersedia 24 jam — Anda tidak sendiri",
+                ("6.  Hubungi Hotline Darurat Jika Dibutuhkan", [
+                    "Hotline tersedia 24 jam — Anda tidak sendiri dan bantuan selalu ada",
                 ]),
             ],
         },
         LANG_EN: {
-            "title": "🚨  High Risk",
+            "title": "High Risk",
             "desc": (
                 "The screening shows significant indicators of depression risk. "
                 "This is not a medical diagnosis, but you are strongly encouraged to "
                 "seek help from a mental health professional immediately."
             ),
             "recs": [
-                ("🏥  Seek Professional Help — TOP PRIORITY", [
+                ("1.  Seek Professional Help — TOP PRIORITY", [
                     "Contact a psychologist or psychiatrist as soon as possible — don't delay",
                 ]),
-                ("💬  Talk to Someone You Trust", [
+                ("2.  Talk to Someone You Trust", [
                     "Share your feelings with family, close friends, or a trusted mentor",
                     "You don't have to carry this burden alone",
                 ]),
-                ("🎓  Request Academic Adjustment", [
-                    "Discuss deadline extensions or reduced study loads with your lecturer or academic advisor",
+                ("3.  Activate Your Social Support", [
+                    "Ask family or close friends to accompany you through this process — do not isolate yourself",
                 ]),
-                ("📵  Protect Your Digital Wellbeing", [
+                ("4.  Request Academic Adjustment", [
+                    "Discuss deadline extensions or reduced study loads with your lecturer or academic advisor",
+                    "Your mental health is more important than temporary academic performance",
+                ]),
+                ("5.  Protect Your Digital Wellbeing", [
                     "Limit exposure to negative content and take a temporary break from social media",
                 ]),
-                ("📞  Contact Hotline if Needed", [
-                    "Hotlines are available 24 hours — you are not alone",
+                ("6.  Contact Emergency Hotline if Needed", [
+                    "Hotlines are available 24 hours — you are not alone and help is always available",
+                ]),
+            ],
+        },
+        LANG_HI: {
+            "title": "उच्च जोखिम",
+            "desc": (
+                "जांच में अवसाद जोखिम के महत्वपूर्ण संकेतक दिखे हैं। "
+                "यह चिकित्सीय निदान नहीं है, लेकिन आपको तुरंत "
+                "मानसिक स्वास्थ्य विशेषज्ञ से सहायता लेने की दृढ़ता से सलाह दी जाती है।"
+            ),
+            "recs": [
+                ("1.  पेशेवर सहायता लें — सर्वोच्च प्राथमिकता", [
+                    "जल्द से जल्द किसी मनोवैज्ञानिक या मनोचिकित्सक से संपर्क करें — देर न करें",
+                ]),
+                ("2.  किसी विश्वसनीय व्यक्ति से बात करें", [
+                    "अपनी भावनाएं परिवार, करीबी दोस्त या किसी मार्गदर्शक के साथ साझा करें",
+                    "आपको यह बोझ अकेले नहीं उठाना है",
+                ]),
+                ("3.  सामाजिक समर्थन सक्रिय करें", [
+                    "परिवार या करीबी दोस्तों से इस प्रक्रिया में साथ देने के लिए कहें — खुद को अलग न करें",
+                ]),
+                ("4.  शैक्षणिक समायोजन का अनुरोध करें", [
+                    "अपने शिक्षक या परामर्शदाता से समय-सीमा बढ़ाने या अध्ययन भार कम करने पर चर्चा करें",
+                    "आपका मानसिक स्वास्थ्य अस्थायी शैक्षणिक प्रदर्शन से अधिक महत्वपूर्ण है",
+                ]),
+                ("5.  डिजिटल स्वास्थ्य की रक्षा करें", [
+                    "नकारात्मक सामग्री का संपर्क सीमित करें और सोशल मीडिया से अस्थायी विराम लें",
+                ]),
+                ("6.  जरूरत पड़ने पर आपातकालीन हॉटलाइन से संपर्क करें", [
+                    "हॉटलाइन 24 घंटे उपलब्ध है — आप अकेले नहीं हैं और मदद हमेशा उपलब्ध है",
                 ]),
             ],
         },
         "hotline": True,
-    },
+    }
 }
 
 # ══════════════════════════════════════════════════════════════════════════════
