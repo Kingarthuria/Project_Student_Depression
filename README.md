@@ -1,4 +1,4 @@
-# 🧠 MindCheck — Student Depression Screening System
+# MindCheck — Student Depression Screening System
 > Sistem Skrining Kesehatan Mental Mahasiswa berbasis Machine Learning
 > dengan Klasifikasi Risiko Multilevel
 
