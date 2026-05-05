@@ -12,9 +12,11 @@ MindCheck adalah sistem skrining kesehatan mental berbasis data
 yang dirancang untuk membantu mahasiswa mendeteksi risiko depresi
 secara dini. Sistem ini menggunakan model **Logistic Regression**
 yang dioptimasi dengan **Optuna**, dan menghasilkan klasifikasi
-risiko ke dalam tiga tingkatan berdasarkan ambang batas
-probabilitas yang ditentukan secara empiris melalui analisis
-Precision-Recall Curve.
+risiko ke dalam tiga tingkatan berdasarkan ambang batas probabilitas yang ditentukan berdasarkan
+inspeksi manual terhadap nilai Precision dan Recall pada
+berbagai threshold, hingga memenuhi target yang ditetapkan:
+Recall ≥ 0.95 untuk batas bawah dan Precision ≥ 0.90
+untuk batas atas."
 
 Prediksi dilakukan berdasarkan **faktor risiko** seperti tekanan
 akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari
@@ -39,9 +41,9 @@ instalasi:
 
 | Level | Probabilitas | Basis Pemilihan |
 |---|---|---|
-| 🟢 Rendah | P < 33.65% | Recall ≥ 0.95 |
-| 🟡 Sedang | 33.65% ≤ P < 70.33% | Zona transisi |
-| 🔴 Tinggi | P ≥ 70.33% | Precision ≥ 0.90 |
+| 🟢 Rendah | P < 33.65% | Threshold di mana Recall mencapai ≥ 0.95 |
+| 🟡 Sedang | 33.65% ≤ P < 70.33% | Zona transisi antar threshold |
+| 🔴 Tinggi | P ≥ 70.33% | Threshold di mana Precision mencapai ≥ 0.90 |
 
 ---
 
