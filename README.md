@@ -16,7 +16,7 @@ risiko ke dalam tiga tingkatan berdasarkan ambang batas probabilitas yang ditent
 inspeksi manual terhadap nilai Precision dan Recall pada
 berbagai threshold, hingga memenuhi target yang ditetapkan:
 Recall ≥ 0.95 untuk batas bawah dan Precision ≥ 0.90
-untuk batas atas."
+untuk batas atas.
 
 Prediksi dilakukan berdasarkan **faktor risiko** seperti tekanan
 akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari
