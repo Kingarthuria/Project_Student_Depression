@@ -1,110 +1,109 @@
 # 🧠 MindCheck — Student Depression Screening System
-> Sistem Skrining Depresi Mahasiswa · Multilevel Risk Classification
+> Sistem Skrining Kesehatan Mental Mahasiswa berbasis Machine Learning
+> dengan Klasifikasi Risiko Multilevel
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://checkyourmind.streamlit.app)
 
 ---
 
-## 📁 Struktur Proyek / Project Structure
+## 📌 Tentang Proyek
 
-```
-mindcheck-app/
-├── app.py                   ← Aplikasi utama Streamlit
-├── requirements.txt         ← Dependensi Python
-├── .streamlit/
-│   └── config.toml          ← Konfigurasi tema & server
-├── models/
-│   ├── model.pkl            ← ⚠️  WAJIB: Logistic Regression model
-│   ├── scaler.pkl           ← ⚠️  WAJIB: StandardScaler
-│   └── target_encoder.pkl   ← ⚠️  WAJIB: Target Encoder (City)
-└── README.md
-```
+MindCheck adalah sistem skrining kesehatan mental berbasis data
+yang dirancang untuk membantu mahasiswa mendeteksi risiko depresi
+secara dini. Sistem ini menggunakan model **Logistic Regression**
+yang dioptimasi dengan **Optuna**, dan menghasilkan klasifikasi
+risiko ke dalam tiga tingkatan berdasarkan ambang batas
+probabilitas yang ditentukan secara empiris melalui analisis
+Precision-Recall Curve.
+
+Prediksi dilakukan berdasarkan **faktor risiko** seperti tekanan
+akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari
+— bukan berdasarkan gejala klinis.
+
+> ⚠️ **Disclaimer:** Hasil skrining ini bukan merupakan diagnosis
+> medis atau psikologis. Selalu konsultasikan kondisi Anda dengan
+> profesional kesehatan mental yang kompeten.
 
 ---
 
-## ⚡ Ambang Probabilitas / Probability Thresholds
+## 🚀 Demo Aplikasi
 
-| Level Risiko | Range Probabilitas | Basis |
+Aplikasi tersedia secara publik dan dapat diakses langsung tanpa
+instalasi:
+
+**👉 [checkyourmind.streamlit.app](https://checkyourmind.streamlit.app)**
+
+---
+
+## 🎯 Klasifikasi Risiko
+
+| Level | Probabilitas | Basis Pemilihan |
 |---|---|---|
-| 🟢 **Rendah / Low**   | P < 0.3365  | Recall depresi ≥ 0.95 |
-| 🟡 **Sedang / Medium** | 0.3365 ≤ P < 0.7033 | — |
-| 🔴 **Tinggi / High**  | P ≥ 0.7033   | Precision depresi ≥ 0.90 |
+| 🟢 Rendah | P < 33.65% | Recall ≥ 0.95 |
+| 🟡 Sedang | 33.65% ≤ P < 70.33% | Zona transisi |
+| 🔴 Tinggi | P ≥ 70.33% | Precision ≥ 0.90 |
 
 ---
 
-## 🚀 Cara Deploy ke Streamlit Community Cloud
+## 📊 Performa Model
 
-### Langkah 1 — Persiapkan Repository GitHub
+| Metrik | Nilai |
+|---|---|
+| Recall | 0.8356 |
+| F1-Score | 0.8209 |
+| ROC-AUC | 0.8780 |
+| Accuracy | 0.8003 |
+
+> Model dipilih berdasarkan Recall sebagai prioritas utama —
+> dalam konteks deteksi depresi, meminimalkan kasus yang tidak
+> terdeteksi (*false negative*) lebih penting dari metrik lainnya.
+
+---
+
+## 🔍 Fitur Utama Aplikasi
+
+- **Form 3 langkah** — input terstruktur: data diri, akademik,
+  dan gaya hidup
+- **Probability gauge** — visualisasi risiko berbentuk setengah
+  lingkaran interaktif
+- **Rekomendasi adaptif** — saran yang disesuaikan per level
+  risiko
+- **Hotline support** — kontak layanan kesehatan mental per negara
+- **Multi-bahasa** — tersedia dalam Bahasa Indonesia, English,
+  dan हिन्दी
+
+---
+
+## 🛠️ Tech Stack
+
+| Komponen | Teknologi |
+|---|---|
+| Frontend | Streamlit |
+| Model | Logistic Regression (scikit-learn) |
+| Encoding | Target Encoder (category-encoders) |
+| Tuning | Optuna (TPE Sampler, 100 trials) |
+| Deployment | Streamlit Community Cloud |
+
+---
+
+## 📂 Dataset
+
+**Student Depression Dataset** · Kaggle — adilshamim8
+
+> Dataset dikumpulkan dari mahasiswa di India. Model mungkin
+> paling akurat untuk populasi dengan karakteristik serupa.
+
+🔗 [Akses Dataset](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset)
+
+---
+
+## 🏃 Menjalankan Secara Lokal
 
 ```bash
-# 1. Buat repo baru di GitHub (nama bebas, misal: mindcheck-app)
-# 2. Clone ke lokal
-git clone https://github.com/<username>/mindcheck-app.git
+# Clone repository
+git clone https://github.com/Kingarthuria/mindcheck-app.git
 cd mindcheck-app
-```
 
-### Langkah 2 — Salin Semua File
-
-Salin seluruh isi folder ini ke dalam repo GitHub Anda:
-```
-app.py
-requirements.txt
-.streamlit/config.toml
-models/model.pkl          ← ⚠️ jangan lupa file ini!
-models/scaler.pkl
-models/target_encoder.pkl
-```
-
-### Langkah 3 — Commit & Push
-
-```bash
-git add .
-git commit -m "feat: initial MindCheck deployment"
-git push origin main
-```
-
-### Langkah 4 — Deploy di Streamlit Community Cloud
-
-1. Buka **https://share.streamlit.io** dan login dengan akun GitHub
-2. Klik **"New app"**
-3. Isi form:
-   - **Repository:** `<username>/mindcheck-app`
-   - **Branch:** `main`
-   - **Main file path:** `app.py`
-4. Klik **"Deploy!"**
-5. Tunggu beberapa menit hingga aplikasi live ✅
-
-> 💡 **URL** aplikasi Anda akan berformat:
-> `https://<username>-mindcheck-app-app-<hash>.streamlit.app`
-
----
-
-## 🔧 Konfigurasi Kolom (Penting!)
-
-Pastikan nama kolom di `FEATURE_COLS` dalam `app.py` **persis sama** dengan
-nama kolom saat training model:
-
-```python
-# app.py — baris ~55
-FEATURE_COLS = [
-    'Gender',
-    'Age',
-    'City',
-    'Academic Pressure',
-    'CGPA',
-    'Study Satisfaction',
-    'Sleep Duration',
-    'Dietary Habits',
-    'Education Level',          # ← ubah jika berbeda (misal: 'Degree')
-    'Work/Study Hours',
-    'Financial Stress',
-    'Family History of Mental Illness',
-]
-```
-
----
-
-## 🧪 Uji Lokal / Local Testing
-
-```bash
 # Install dependensi
 pip install -r requirements.txt
 
@@ -116,52 +115,15 @@ Buka browser di `http://localhost:8501`
 
 ---
 
-## 📦 Dependensi Utama
+## 👤 Developer
 
-| Package | Versi Minimum | Kegunaan |
-|---|---|---|
-| streamlit | 1.32.0 | Framework UI |
-| scikit-learn | 1.3.0 | Model & Scaler |
-| pandas | 2.0.0 | Preprocessing |
-| numpy | 1.24.0 | Komputasi numerik |
-| category-encoders | 2.6.0 | Target Encoding |
+**Arthur Pendragon**
+Data Scientist · Machine Learning Enthusiast
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/arthurpendragon)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:thedumbestknightever@gmail.com)
 
 ---
 
-## ⚠️  Catatan Penting / Important Notes
-
-- **File `.pkl` harus ikut di-commit** ke GitHub karena Streamlit Community Cloud
-  membaca langsung dari repo. File PKL mahasiswa biasanya kecil (<50 MB) — ini aman.
-- Jika PKL Anda **>25 MB**: pertimbangkan Git LFS atau upload ke external storage.
-- Aplikasi ini adalah **alat skrining awal**, bukan diagnosis medis.
-- Selalu cantumkan disclaimer ketika digunakan secara publik.
-
----
-
-## 🏗️  Arsitektur Alur Prediksi
-
-```
-Input User (Form 3 Langkah)
-        ↓
-Preprocessing:
-  • Clip Age  (atas=35)
-  • Clip CGPA (bawah=5.0)
-  • Target Encode (City)  ← target_encoder.pkl
-  • Select FEATURE_COLS (urutan training)
-  • StandardScaler        ← scaler.pkl
-        ↓
-Logistic Regression     ← model.pkl
-        ↓
-predict_proba()[1]  →  P(Depression=1)
-        ↓
-Klasifikasi Risiko:
-  P < 0.233  → Rendah / Low
-  P < 0.750  → Sedang / Medium
-  P ≥ 0.750  → Tinggi / High
-        ↓
-Tampilkan Hasil + Rekomendasi
-```
-
----
-
-*MindCheck — Dikembangkan sebagai proyek Data Science untuk skrining kesehatan mental mahasiswa.*
+*MindCheck — Sebuah upaya kecil untuk memberi makna
+di antara baris kode dan data.*
