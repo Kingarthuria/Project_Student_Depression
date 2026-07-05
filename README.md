@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Tentang Proyek
+## Tentang Proyek
 
 MindCheck adalah sistem skrining kesehatan mental berbasis data
 yang dirancang untuk membantu mahasiswa mendeteksi risiko depresi
@@ -28,7 +28,7 @@ akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari
 
 ---
 
-## 🚀 Demo Aplikasi
+## Demo Aplikasi
 
 Aplikasi tersedia secara publik dan dapat diakses langsung tanpa
 instalasi:
@@ -37,7 +37,7 @@ instalasi:
 
 ---
 
-## 🎯 Klasifikasi Risiko
+## Klasifikasi Risiko
 
 | Level | Probabilitas | Basis Pemilihan |
 |---|---|---|
@@ -62,7 +62,7 @@ instalasi:
 
 ---
 
-## 🔍 Fitur Utama Aplikasi
+## Fitur Utama Aplikasi
 
 - **Form 3 langkah** — input terstruktur: data diri, akademik,
   dan gaya hidup
@@ -76,7 +76,7 @@ instalasi:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Komponen | Teknologi |
 |---|---|
@@ -99,7 +99,7 @@ instalasi:
 
 ---
 
-## 🏃 Menjalankan Secara Lokal
+## Menjalankan Secara Lokal
 
 ```bash
 # Clone repository
