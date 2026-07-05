@@ -56,7 +56,7 @@ instalasi:
 | ROC-AUC | 0.8780 |
 | Accuracy | 0.8003 |
 
-> Model dipilih berdasarkan Recall sebagai prioritas utama —
+> Model dipilih berdasarkan Recall sebagai prioritas utama dikarenakan tujuan pembuatan dilakukan
 > dalam konteks deteksi depresi, meminimalkan kasus yang tidak
 > terdeteksi (*false negative*) lebih penting dari metrik lainnya.
 
@@ -64,14 +64,14 @@ instalasi:
 
 ## Fitur Utama Aplikasi
 
-- **Form 3 langkah** — input terstruktur: data diri, akademik,
+- **Form 3 langkah** : data diri, akademik,
   dan gaya hidup
-- **Probability gauge** — visualisasi risiko berbentuk setengah
+- **Probability gauge** : visualisasi risiko berbentuk setengah
   lingkaran interaktif
-- **Rekomendasi adaptif** — saran yang disesuaikan per level
+- **Rekomendasi adaptif** : saran yang disesuaikan per level
   risiko
-- **Hotline support** — kontak layanan kesehatan mental per negara
-- **Multi-bahasa** — tersedia dalam Bahasa Indonesia, English,
+- **Hotline support** : kontak layanan kesehatan mental per negara
+- **Multi-bahasa** : tersedia dalam Bahasa Indonesia, English,
   dan हिन्दी
 
 ---
@@ -90,7 +90,7 @@ instalasi:
 
 ## 📂 Dataset
 
-**Student Depression Dataset** · Kaggle — adilshamim8
+**Student Depression Dataset** · Kaggle: adilshamim8
 
 > Dataset dikumpulkan dari mahasiswa di India. Model mungkin
 > paling akurat untuk populasi dengan karakteristik serupa.
