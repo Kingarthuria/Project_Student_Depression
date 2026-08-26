@@ -1,4 +1,5 @@
 # MindCheck - Student Depression Screening System
+
 > Sistem Skrining Kesehatan Mental Mahasiswa berbasis Machine Learning
 > dengan Klasifikasi Risiko Multilevel
 
@@ -12,15 +13,15 @@ MindCheck adalah sistem skrining kesehatan mental berbasis data
 yang dirancang untuk membantu mahasiswa mendeteksi risiko depresi
 secara dini. Sistem ini menggunakan model **Logistic Regression**
 yang dioptimasi dengan **Optuna**, dan menghasilkan klasifikasi
-risiko ke dalam tiga tingkatan berdasarkan ambang batas probabilitas yang ditentukan berdasarkan
-inspeksi manual terhadap nilai Precision dan Recall pada
-berbagai threshold, hingga memenuhi target yang ditetapkan:
-Recall >= 0.95 untuk batas bawah dan Precision >= 0.90
-untuk batas atas.
+risiko ke dalam tiga tingkatan berdasarkan ambang batas probabilitas.
+
+Ambang batas ini ditentukan secara sistematis dari kurva
+Precision-Recall pada data uji, dengan target: Recall >= 0.95
+untuk batas bawah dan Precision >= 0.90 untuk batas atas.
 
 Prediksi dilakukan berdasarkan **faktor risiko** seperti tekanan
-akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari,
-bukan berdasarkan gejala klinis.
+akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari.
+Model tidak menggunakan gejala klinis sebagai fitur prediktor.
 
 > **Disclaimer:** Hasil skrining ini bukan merupakan diagnosis
 > medis atau psikologis. Selalu konsultasikan kondisi Anda dengan
@@ -42,8 +43,8 @@ instalasi:
 | Level | Probabilitas | Basis Pemilihan |
 |---|---|---|
 | Rendah | P < 33.65% | Threshold di mana Recall mencapai >= 0.95 |
-| Sedang | 33.65% <= P < 70.33% | Zona transisi antar threshold |
-| Tinggi | P >= 70.33% | Threshold di mana Precision mencapai >= 0.90 |
+| Sedang | 33.65% <= P < 70.34% | Zona transisi antar threshold |
+| Tinggi | P >= 70.34% | Threshold di mana Precision mencapai >= 0.90 |
 
 ---
 
@@ -53,12 +54,13 @@ instalasi:
 |---|---|
 | Recall | 0.8356 |
 | F1-Score | 0.8209 |
-| ROC-AUC | 0.8780 |
+| ROC-AUC | 0.8746 |
 | Accuracy | 0.8003 |
 
-> Model dipilih berdasarkan Recall sebagai prioritas utama dikarenakan tujuan pembuatan dilakukan
-> dalam konteks deteksi depresi, meminimalkan kasus yang tidak
-> terdeteksi (*false negative*) lebih penting dari metrik lainnya.
+> Model dipilih dengan Recall sebagai prioritas utama. Dalam
+> konteks deteksi depresi, meminimalkan kasus yang tidak
+> terdeteksi (*false negative*) dinilai lebih penting dibanding
+> metrik lainnya.
 
 ---
 
@@ -99,8 +101,8 @@ instalasi:
 
 ```bash
 # Clone repository
-git clone https://github.com/Kingarthuria/mindcheck-app.git
-cd mindcheck-app
+git clone https://github.com/Kingarthuria/project_student_depression.git
+cd project_student_depression
 
 # Install dependensi
 pip install -r requirements.txt
