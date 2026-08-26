@@ -4,8 +4,8 @@ MindCheck — Sistem Skrining Depresi Mahasiswa
 
 Multi-level Risk Classification via Probability Thresholds:
   Low Risk    : P(depression) < 0.3365
-  Medium Risk : 0.3365 ≤ P(depression) < 0.703
-  High Risk   : P(depression) ≥ 0.703
+  Medium Risk : 0.3365 ≤ P(depression) < 0.7034
+  High Risk   : P(depression) ≥ 0.7034
 """
 
 import math
@@ -34,8 +34,8 @@ st.set_page_config(
 #  CONSTANTS
 # ══════════════════════════════════════════════════════════════════════════════
 
-THRESHOLD_LOW  = 0.3365
-THRESHOLD_HIGH = 0.7033
+THRESHOLD_LOW  = 0.3365175408169001
+THRESHOLD_HIGH = 0.703362028219295
 
 LANG_ID = "🇮🇩  Bahasa Indonesia"
 LANG_EN = "🇬🇧  English"
