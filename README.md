@@ -1,4 +1,4 @@
-# MindCheck — Student Depression Screening System
+# MindCheck - Student Depression Screening System
 > Sistem Skrining Kesehatan Mental Mahasiswa berbasis Machine Learning
 > dengan Klasifikasi Risiko Multilevel
 
@@ -15,14 +15,14 @@ yang dioptimasi dengan **Optuna**, dan menghasilkan klasifikasi
 risiko ke dalam tiga tingkatan berdasarkan ambang batas probabilitas yang ditentukan berdasarkan
 inspeksi manual terhadap nilai Precision dan Recall pada
 berbagai threshold, hingga memenuhi target yang ditetapkan:
-Recall ≥ 0.95 untuk batas bawah dan Precision ≥ 0.90
+Recall >= 0.95 untuk batas bawah dan Precision >= 0.90
 untuk batas atas.
 
 Prediksi dilakukan berdasarkan **faktor risiko** seperti tekanan
-akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari
-— bukan berdasarkan gejala klinis.
+akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari,
+bukan berdasarkan gejala klinis.
 
-> ⚠️ **Disclaimer:** Hasil skrining ini bukan merupakan diagnosis
+> **Disclaimer:** Hasil skrining ini bukan merupakan diagnosis
 > medis atau psikologis. Selalu konsultasikan kondisi Anda dengan
 > profesional kesehatan mental yang kompeten.
 
@@ -33,7 +33,7 @@ akademik, stres finansial, jam belajar, dan kebiasaan sehari-hari
 Aplikasi tersedia secara publik dan dapat diakses langsung tanpa
 instalasi:
 
-**👉 [checkyourmind.streamlit.app](https://checkyourmind.streamlit.app)**
+**[checkyourmind.streamlit.app](https://checkyourmind.streamlit.app)**
 
 ---
 
@@ -41,13 +41,13 @@ instalasi:
 
 | Level | Probabilitas | Basis Pemilihan |
 |---|---|---|
-| 🟢 Rendah | P < 33.65% | Threshold di mana Recall mencapai ≥ 0.95 |
-| 🟡 Sedang | 33.65% ≤ P < 70.33% | Zona transisi antar threshold |
-| 🔴 Tinggi | P ≥ 70.33% | Threshold di mana Precision mencapai ≥ 0.90 |
+| Rendah | P < 33.65% | Threshold di mana Recall mencapai >= 0.95 |
+| Sedang | 33.65% <= P < 70.33% | Zona transisi antar threshold |
+| Tinggi | P >= 70.33% | Threshold di mana Precision mencapai >= 0.90 |
 
 ---
 
-## 📊 Performa Model
+## Performa Model
 
 | Metrik | Nilai |
 |---|---|
@@ -64,15 +64,11 @@ instalasi:
 
 ## Fitur Utama Aplikasi
 
-- **Form 3 langkah** : data diri, akademik,
-  dan gaya hidup
-- **Probability gauge** : visualisasi risiko berbentuk setengah
-  lingkaran interaktif
-- **Rekomendasi adaptif** : saran yang disesuaikan per level
-  risiko
-- **Hotline support** : kontak layanan kesehatan mental per negara
-- **Multi-bahasa** : tersedia dalam Bahasa Indonesia, English,
-  dan हिन्दी
+- **Form 3 langkah**: data diri, akademik, dan gaya hidup
+- **Probability gauge**: visualisasi risiko berbentuk setengah lingkaran interaktif
+- **Rekomendasi adaptif**: saran yang disesuaikan per level risiko
+- **Hotline support**: kontak layanan kesehatan mental per negara
+- **Multi-bahasa**: tersedia dalam Bahasa Indonesia, English, dan Hindi
 
 ---
 
@@ -88,14 +84,14 @@ instalasi:
 
 ---
 
-## 📂 Dataset
+## Dataset
 
-**Student Depression Dataset** · Kaggle: adilshamim8
+**Student Depression Dataset** - Kaggle: adilshamim8
 
 > Dataset dikumpulkan dari mahasiswa di India. Model mungkin
 > paling akurat untuk populasi dengan karakteristik serupa.
 
-🔗 [Akses Dataset](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset)
+[Akses Dataset](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset)
 
 ---
 
@@ -117,15 +113,15 @@ Buka browser di `http://localhost:8501`
 
 ---
 
-## 👤 Developer
+## Developer
 
 **Arthur Pendragon**
-Data Scientist · Machine Learning Enthusiast
+Data Scientist - Machine Learning Enthusiast
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/arthurpendragon)
 [![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:thedumbestknightever@gmail.com)
 
 ---
 
-*MindCheck — Sebuah upaya kecil untuk memberi makna
+*MindCheck - Sebuah upaya kecil untuk memberi makna
 di antara baris kode dan data.*
