@@ -1,11 +1,11 @@
 """
-MindCheck — Sistem Skrining Depresi Mahasiswa
+MindCheck: Sistem Skrining Depresi Mahasiswa
            Student Depression Screening System
 
 Multi-level Risk Classification via Probability Thresholds:
   Low Risk    : P(depression) < 0.3365
-  Medium Risk : 0.3365 ≤ P(depression) < 0.7034
-  High Risk   : P(depression) ≥ 0.7034
+  Medium Risk : 0.3365 <= P(depression) < 0.7034
+  High Risk   : P(depression) >= 0.7034
 """
 
 import math
@@ -344,10 +344,10 @@ RECOMMENDATIONS = {
                     "Lakukan refleksi atau journaling mingguan untuk memantau kondisi mental Anda",
                 ]),
                 ("3.  Manfaatkan Konseling Preventif", [
-                    "Layanan konseling kampus tersedia untuk semua mahasiswa — tidak harus menunggu hingga bermasalah",
+                    "Layanan konseling kampus tersedia untuk semua mahasiswa. Anda tidak harus menunggu hingga bermasalah",
                 ]),
                 ("4.  Bangun Koneksi Sosial", [
-                    "Jaga hubungan aktif dengan teman dan keluarga — dukungan sosial adalah faktor protektif terkuat terhadap depresi",
+                    "Jaga hubungan aktif dengan teman dan keluarga; dukungan sosial adalah faktor protektif terkuat terhadap depresi",
                 ]),
                 ("5.  Kelola Stres Secara Proaktif", [
                     "Pelajari teknik manajemen stres sederhana seperti pernapasan dalam, meditasi ringan, atau olahraga rutin minimal 30 menit per hari",
@@ -369,10 +369,10 @@ RECOMMENDATIONS = {
                     "Practice weekly reflection or journaling to monitor your mental state",
                 ]),
                 ("3.  Use Preventive Counseling", [
-                    "Campus counseling services are available for all students — you don't have to wait until things get worse",
+                    "Campus counseling services are available for all students. You don't have to wait until things get worse",
                 ]),
                 ("4.  Build Social Connections", [
-                    "Maintain active relationships with friends and family — social support is the strongest protective factor against depression",
+                    "Maintain active relationships with friends and family; social support is the strongest protective factor against depression",
                 ]),
                 ("5.  Manage Stress Proactively", [
                     "Learn simple stress management techniques such as deep breathing, light meditation, or regular exercise for at least 30 minutes a day",
@@ -394,10 +394,10 @@ RECOMMENDATIONS = {
                     "अपनी मानसिक स्थिति की निगरानी के लिए साप्ताहिक प्रतिबिंब या जर्नलिंग करें",
                 ]),
                 ("3.  निवारक परामर्श का उपयोग करें", [
-                    "कैंपस काउंसलिंग सेवाएं सभी छात्रों के लिए उपलब्ध हैं — समस्या बढ़ने का इंतजार न करें",
+                    "कैंपस काउंसलिंग सेवाएं सभी छात्रों के लिए उपलब्ध हैं। समस्या बढ़ने का इंतजार न करें",
                 ]),
                 ("4.  सामाजिक संबंध बनाएं", [
-                    "दोस्तों और परिवार के साथ सक्रिय संबंध बनाए रखें — सामाजिक समर्थन अवसाद के विरुद्ध सबसे मजबूत सुरक्षात्मक कारक है",
+                    "दोस्तों और परिवार के साथ सक्रिय संबंध बनाए रखें; सामाजिक समर्थन अवसाद के विरुद्ध सबसे मजबूत सुरक्षात्मक कारक है",
                 ]),
                 ("5.  तनाव को सक्रिय रूप से प्रबंधित करें", [
                     "गहरी सांस लेना, हल्का ध्यान, या प्रतिदिन कम से कम 30 मिनट व्यायाम जैसी सरल तनाव प्रबंधन तकनीकें सीखें",
@@ -417,20 +417,20 @@ RECOMMENDATIONS = {
             ),
             "recs": [
                 ("1.  Jadwalkan Konseling", [
-                    "Segera jadwalkan sesi dengan konselor atau psikolog kampus Anda — ini langkah paling penting",
+                    "Segera jadwalkan sesi dengan konselor atau psikolog kampus Anda. Ini langkah paling penting",
                 ]),
                 ("2.  Lakukan Skrining Klinis Bersama Profesional", [
-                    "Minta konselor atau psikolog untuk melakukan skrining menggunakan instrumen klinis (PHQ-9) — jangan lakukan sendiri",
+                    "Minta konselor atau psikolog untuk melakukan skrining menggunakan instrumen klinis (PHQ-9), jangan lakukan sendiri",
                 ]),
                 ("3.  Pemantauan Intensif", [
                     "Lakukan pemantauan kondisi secara berkala dalam 2–4 minggu ke depan bersama tenaga profesional",
                 ]),
                 ("4.  Jangan Hadapi Sendiri", [
-                    "Ceritakan kondisi Anda kepada orang yang dipercaya — teman dekat, keluarga, atau konselor",
+                    "Ceritakan kondisi Anda kepada orang yang dipercaya, seperti teman dekat, keluarga, atau konselor",
                     "Jika sewaktu-waktu merasa kewalahan, layanan hotline tersedia untuk diajak bicara",
                 ]),
                 ("5.  Prioritaskan Istirahat", [
-                    "Targetkan 7–8 jam tidur konsisten — kualitas tidur berpengaruh langsung pada kesehatan mental",
+                    "Targetkan 7–8 jam tidur konsisten; kualitas tidur berpengaruh langsung pada kesehatan mental",
                 ]),
             ],
         },
@@ -443,20 +443,20 @@ RECOMMENDATIONS = {
             ),
             "recs": [
                 ("1.  Schedule Counseling", [
-                    "Schedule a session with your campus counselor or psychologist soon — this is the most important step",
+                    "Schedule a session with your campus counselor or psychologist soon. This is the most important step",
                 ]),
                 ("2.  Clinical Screening with a Professional", [
-                    "Ask your counselor or psychologist to conduct a clinical screening using the PHQ-9 instrument — do not do this alone",
+                    "Ask your counselor or psychologist to conduct a clinical screening using the PHQ-9 instrument, don't do this alone",
                 ]),
                 ("3.  Intensive Monitoring", [
                     "Monitor your condition regularly over the next 2–4 weeks together with a professional",
                 ]),
                 ("4.  Don't Face It Alone", [
-                    "Share your condition with someone you trust — a close friend, family member, or counselor",
+                    "Share your condition with someone you trust, such as a close friend, family member, or counselor",
                     "If you ever feel overwhelmed, hotline services are available to talk to",
                 ]),
                 ("5.  Prioritize Rest", [
-                    "Aim for a consistent 7–8 hours of sleep — sleep quality directly affects mental health",
+                    "Aim for a consistent 7–8 hours of sleep; sleep quality directly affects mental health",
                 ]),
             ],
         },
@@ -472,17 +472,17 @@ RECOMMENDATIONS = {
                     "जल्द से जल्द अपने कैंपस काउंसलर या मनोवैज्ञानिक के साथ सत्र शेड्यूल करें",
                 ]),
                 ("2.  पेशेवर के साथ नैदानिक जांच करें", [
-                    "काउंसलर या मनोवैज्ञानिक से PHQ-9 उपकरण का उपयोग करके नैदानिक जांच कराएं — यह अकेले न करें",
+                    "काउंसलर या मनोवैज्ञानिक से PHQ-9 उपकरण का उपयोग करके नैदानिक जांच कराएं, यह अकेले न करें",
                 ]),
                 ("3.  गहन निगरानी", [
                     "अगले 2–4 हफ्तों में किसी पेशेवर के साथ नियमित रूप से अपनी स्थिति की निगरानी करें",
                 ]),
                 ("4.  अकेले मत झेलें", [
-                    "अपनी स्थिति किसी विश्वसनीय व्यक्ति के साथ साझा करें — करीबी दोस्त, परिवार, या काउंसलर",
+                    "अपनी स्थिति किसी विश्वसनीय व्यक्ति के साथ साझा करें, जैसे करीबी दोस्त, परिवार, या काउंसलर",
                     "अगर कभी अभिभूत महसूस हों, तो बात करने के लिए हॉटलाइन सेवाएं उपलब्ध हैं",
                 ]),
                 ("5.  आराम को प्राथमिकता दें", [
-                    "लगातार 7–8 घंटे की नींद का लक्ष्य रखें — नींद की गुणवत्ता सीधे मानसिक स्वास्थ्य को प्रभावित करती है",
+                    "लगातार 7–8 घंटे की नींद का लक्ष्य रखें; नींद की गुणवत्ता सीधे मानसिक स्वास्थ्य को प्रभावित करती है",
                 ]),
             ],
         },
@@ -498,15 +498,15 @@ RECOMMENDATIONS = {
                 "mencari bantuan dari profesional kesehatan mental."
             ),
             "recs": [
-                ("1.  Cari Bantuan Profesional — PRIORITAS UTAMA", [
-                    "Hubungi psikolog atau psikiater sesegera mungkin — jangan tunda",
+                ("1.  Cari Bantuan Profesional (Prioritas Utama)", [
+                    "Hubungi psikolog atau psikiater sesegera mungkin, jangan tunda",
                 ]),
                 ("2.  Berbagi dengan Orang Terpercaya", [
                     "Ceritakan perasaan Anda kepada keluarga, sahabat dekat, atau mentor",
                     "Anda tidak harus menanggung beban ini sendirian",
                 ]),
                 ("3.  Aktifkan Dukungan Sosial", [
-                    "Minta keluarga atau teman dekat untuk mendampingi Anda dalam proses ini — jangan isolasi diri",
+                    "Minta keluarga atau teman dekat untuk mendampingi Anda dalam proses ini. Jangan isolasi diri",
                 ]),
                 ("4.  Minta Penyesuaian Akademik", [
                     "Bicarakan dengan dosen atau wali studi tentang perpanjangan deadline atau pengurangan beban studi",
@@ -516,7 +516,7 @@ RECOMMENDATIONS = {
                     "Batasi paparan informasi negatif dan istirahatkan diri dari media sosial untuk sementara waktu",
                 ]),
                 ("6.  Hubungi Hotline Darurat Jika Dibutuhkan", [
-                    "Hotline tersedia 24 jam — Anda tidak sendiri dan bantuan selalu ada",
+                    "Hotline tersedia 24 jam. Anda tidak sendiri dan bantuan selalu ada",
                 ]),
             ],
         },
@@ -528,15 +528,15 @@ RECOMMENDATIONS = {
                 "seek help from a mental health professional immediately."
             ),
             "recs": [
-                ("1.  Seek Professional Help — TOP PRIORITY", [
-                    "Contact a psychologist or psychiatrist as soon as possible — don't delay",
+                ("1.  Seek Professional Help (Top Priority)", [
+                    "Contact a psychologist or psychiatrist as soon as possible, don't delay",
                 ]),
                 ("2.  Talk to Someone You Trust", [
                     "Share your feelings with family, close friends, or a trusted mentor",
                     "You don't have to carry this burden alone",
                 ]),
                 ("3.  Activate Your Social Support", [
-                    "Ask family or close friends to accompany you through this process — do not isolate yourself",
+                    "Ask family or close friends to accompany you through this process. Do not isolate yourself",
                 ]),
                 ("4.  Request Academic Adjustment", [
                     "Discuss deadline extensions or reduced study loads with your lecturer or academic advisor",
@@ -546,7 +546,7 @@ RECOMMENDATIONS = {
                     "Limit exposure to negative content and take a temporary break from social media",
                 ]),
                 ("6.  Contact Emergency Hotline if Needed", [
-                    "Hotlines are available 24 hours — you are not alone and help is always available",
+                    "Hotlines are available 24 hours. You are not alone and help is always available",
                 ]),
             ],
         },
@@ -558,15 +558,15 @@ RECOMMENDATIONS = {
                 "मानसिक स्वास्थ्य विशेषज्ञ से सहायता लेने की दृढ़ता से सलाह दी जाती है।"
             ),
             "recs": [
-                ("1.  पेशेवर सहायता लें — सर्वोच्च प्राथमिकता", [
-                    "जल्द से जल्द किसी मनोवैज्ञानिक या मनोचिकित्सक से संपर्क करें — देर न करें",
+                ("1.  पेशेवर सहायता लें (सर्वोच्च प्राथमिकता)", [
+                    "जल्द से जल्द किसी मनोवैज्ञानिक या मनोचिकित्सक से संपर्क करें, देर न करें",
                 ]),
                 ("2.  किसी विश्वसनीय व्यक्ति से बात करें", [
                     "अपनी भावनाएं परिवार, करीबी दोस्त या किसी मार्गदर्शक के साथ साझा करें",
                     "आपको यह बोझ अकेले नहीं उठाना है",
                 ]),
                 ("3.  सामाजिक समर्थन सक्रिय करें", [
-                    "परिवार या करीबी दोस्तों से इस प्रक्रिया में साथ देने के लिए कहें — खुद को अलग न करें",
+                    "परिवार या करीबी दोस्तों से इस प्रक्रिया में साथ देने के लिए कहें। खुद को अलग न करें",
                 ]),
                 ("4.  शैक्षणिक समायोजन का अनुरोध करें", [
                     "अपने शिक्षक या परामर्शदाता से समय-सीमा बढ़ाने या अध्ययन भार कम करने पर चर्चा करें",
@@ -576,7 +576,7 @@ RECOMMENDATIONS = {
                     "नकारात्मक सामग्री का संपर्क सीमित करें और सोशल मीडिया से अस्थायी विराम लें",
                 ]),
                 ("6.  जरूरत पड़ने पर आपातकालीन हॉटलाइन से संपर्क करें", [
-                    "हॉटलाइन 24 घंटे उपलब्ध है — आप अकेले नहीं हैं और मदद हमेशा उपलब्ध है",
+                    "हॉटलाइन 24 घंटे उपलब्ध है। आप अकेले नहीं हैं और मदद हमेशा उपलब्ध है",
                 ]),
             ],
         },
@@ -613,9 +613,9 @@ HOTLINE_STRINGS = {
         LANG_HI: ("💬 बातचीत सेवा",       "उपलब्ध है यदि आपको बात करने के लिए किसी की जरूरत है"),
     },
     "high": {
-        LANG_ID: ("📞 Hotline Darurat",   "Hubungi sekarang — kamu tidak sendiri"),
-        LANG_EN: ("📞 Emergency Hotline", "Call now — you are not alone"),
-        LANG_HI: ("📞 आपातकालीन हॉटलाइन", "अभी कॉल करें — आप अकेले नहीं हैं"),
+        LANG_ID: ("📞 Hotline Darurat",   "Hubungi sekarang, kamu tidak sendiri"),
+        LANG_EN: ("📞 Emergency Hotline", "Call now, you are not alone"),
+        LANG_HI: ("📞 आपातकालीन हॉटलाइन", "अभी कॉल करें, आप अकेले नहीं हैं"),
     },
 }
 
@@ -1207,7 +1207,7 @@ def render_about_project():
             <em>Logistic Regression</em> dengan pendekatan <em>klasifikasi risiko multilevel</em>
             berdasarkan ambang batas probabilitas. Prediksi dilakukan berdasarkan
             <strong>faktor-faktor risiko</strong> seperti tekanan akademik, kualitas tidur,
-            dan stres finansial — bukan berdasarkan gejala klinis.</p>
+            dan stres finansial, bukan berdasarkan gejala klinis.</p>
         </div>
         <div class="about-card">
             <div class="about-card-title">Tujuan</div>
@@ -1247,7 +1247,7 @@ def render_about_project():
             detect depression risk early. It uses a <em>Logistic Regression</em> model with a
             <em>multilevel risk classification</em> approach based on probability thresholds.
             Predictions are based on <strong>risk factors</strong> such as academic pressure,
-            sleep quality, and financial stress — not on clinical symptoms.</p>
+            sleep quality, and financial stress, not on clinical symptoms.</p>
         </div>
         <div class="about-card">
             <div class="about-card-title">Objectives</div>
@@ -1354,7 +1354,7 @@ def render_about_project():
         <p><strong>{name_lbl}:</strong> Student Depression Dataset</p>
         <p><strong>{source_lbl}:</strong>
             <a href="https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset"
-               target="_blank" style="color:#1D6F8E;font-weight:500;">Kaggle — adilshamim8</a>
+               target="_blank" style="color:#1D6F8E;font-weight:500;">Kaggle (adilshamim8)</a>
         </p>
         <p style="margin-top:.6rem;font-size:.82rem;color:#E67E22;">
             ⚠️ <strong>{note_label}:</strong> {note_text}
@@ -1392,7 +1392,7 @@ def render_about_developer():
     if is_id:
         about_me      = ("Lahir ke dunia tanpa sempat memberikan persetujuan, namun kini memilih untuk menetap dengan penuh kesadaran. "
                          "Berawal dari rasa penasaran masa kecil terhadap mesin dan logika, kini saya melangkah ke fase dewasa "
-                         "dengan membangun solusi nyata. Ini adalah proyek pertama saya — sebuah upaya untuk memberi makna di antara baris kode dan data.")
+                         "dengan membangun solusi nyata. Ini adalah proyek pertama saya, sebuah upaya untuk memberi makna di antara baris kode dan data.")
         about_title   = "Tentang Saya"
         skills_title  = "Keahlian"
         contact_title = "Hubungi Saya"
@@ -1400,7 +1400,7 @@ def render_about_developer():
     elif is_hi:
         about_me      = ("बिना सहमति के इस दुनिया में आए, लेकिन अब पूरी जागरूकता के साथ यहाँ रहने का चुनाव किया है। "
                          "बचपन में मशीनों और तर्क के प्रति जो जिज्ञासा थी, वह अब वयस्कता में वास्तविक समाधान बनाने में बदल गई है। "
-                         "यह मेरा पहला प्रोजेक्ट है — कोड और डेटा की पंक्तियों के बीच अर्थ खोजने का एक प्रयास।")
+                         "यह मेरा पहला प्रोजेक्ट है, कोड और डेटा की पंक्तियों के बीच अर्थ खोजने का एक प्रयास।")
         about_title   = "मेरे बारे में"
         skills_title  = "कौशल"
         contact_title = "संपर्क करें"
@@ -1408,7 +1408,7 @@ def render_about_developer():
     else:
         about_me      = ("Cast into existence without prior consent, yet now choosing to reside here with full intent. "
                          "What began as a childhood fascination with machines and logic has evolved into a purposeful step into adulthood. "
-                         "This is my first project — a dedicated effort to find meaning between lines of code and data.")
+                         "This is my first project, a dedicated effort to find meaning between lines of code and data.")
         about_title   = "About Me"
         skills_title  = "Skills"
         contact_title = "Get In Touch"
